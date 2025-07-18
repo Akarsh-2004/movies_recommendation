@@ -8,7 +8,7 @@ app = FastAPI()
 # Allow CORS for your frontend port (Vite: 5173)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # or ["*"] to allow all origins (not recommended in production)
+    allow_origins=["https://moviesideas.netlify.app"],  # <-- your Netlify domain
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
