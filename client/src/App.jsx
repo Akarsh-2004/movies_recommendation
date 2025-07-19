@@ -10,7 +10,7 @@ function App() {
     if (!title.trim()) return;
     setLoading(true);
     try {
-      const res = await fetch(`https://movies-recommendation-mccu.onrender.com/recommend/?title=${encodeURIComponent(title)}`);
+      const res = await fetch(`https://movies-idea.onrender.com/recommend/?title=${encodeURIComponent(title)}`);
       const data = await res.json();
       setRecommendations(data.recommendations || []);
     } catch (error) {
