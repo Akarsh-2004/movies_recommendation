@@ -17,6 +17,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/ping")
+def ping():
+    return {"message": "pong"}
+    
+
 @app.get("/recommend/")
 def recommend(title: str = None, genre: str = None):
     recs = recommend_movies(title, genre)
