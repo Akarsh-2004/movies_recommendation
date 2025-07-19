@@ -23,12 +23,19 @@ function App() {
   return (
     <div className="app">
       <h1>Movie Recommender</h1>
+      
       <input
         type="text"
         value={title}
-        placeholder="Enter movie title"
+        placeholder="Enter movie title or genre"
         onChange={(e) => setTitle(e.target.value)}
       />
+      
+      {/* ✅ User Guidance Note */}
+      <p style={{ fontSize: '0.9rem', color: '#888' }}>
+        Enter a movie name or genre to get similar recommendations.
+      </p>
+
       <button onClick={handleSearch} disabled={loading}>
         {loading ? 'Searching...' : 'Get Recommendations'}
       </button>
