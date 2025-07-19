@@ -117,3 +117,11 @@ li:hover {
     width: 100%;
   }
 }
+
+.app p {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #666;
+}
+
