@@ -34,6 +34,8 @@ function App() {
       {/* ✅ User Guidance Note */}
       <p style={{ fontSize: '0.9rem', color: '#888' }}>
         Enter a movie name or genre to get similar recommendations.
+
+        <br/>
       </p>
 
       <button onClick={handleSearch} disabled={loading}>
